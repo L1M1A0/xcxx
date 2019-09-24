@@ -1,0 +1,164 @@
+/* 注：通用样式，不要在这里直接改，引用时请在wxml页面根据需求更改style */
+
+/* @import '/pages/common/bbUI.wxss'; */
+
+/* 粗线 */
+
+.bigLine {
+  background-color: #f2f2f2;
+  height: 20rpx;
+}
+.line {
+  background-color: #f2f2f2;
+  height: 3rpx;
+}
+
+/* 标签内文字平均分布 */
+.textJustify{
+  width: 14%;
+  text-align-last: justify; 
+}
+
+/* 水平布局 */
+.row {
+  display: flex;
+  flex-direction: row;
+  /* 排列对齐方式：开始、居中、末尾、环绕、、、、 */
+  justify-content: flex-start;
+}
+
+/*  垂直方向布局 */
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* 换行 */
+.lineBreak{
+  /* 设置高度 height之后不能撑开*/
+  flex-wrap: wrap;
+  /* align-items: stretch;
+  display: flex; */
+}
+
+
+
+/** ***************** 分段菜单 ***************** */
+
+.menu {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+  border-bottom: 8rpx solid #fff;
+  /* margin-bottom: 8rpx; */
+}
+
+.menu>view {
+  height: 80rpx;
+  font-size: 30rpx;
+  float: left;
+  text-align: center;
+  /* 宽根据需求设置 */
+  width: 33.33%;
+}
+
+/* ***************** 导航栏 ***************** */
+
+.navi {
+  height: 70rpx;
+  background: linear-gradient(to right, #e52000, #fc5322);
+  padding-left: 75%;
+}
+
+.naviImage {
+  margin-left: 25rpx;
+  margin-top: 10rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.naviTitle {
+  margin-left: 25rpx;
+  margin-top: 10rpx;
+  height: 50rpx;
+  width: 80rpx;
+  color: white;
+  text-align: center;
+  font-size: 30rpx;
+  /* background-color: yellow; */
+}
+
+/* ***************** 搜索栏 ***************** */
+
+.searchBar {
+  height: 80rpx;
+  background: linear-gradient(to right, #e52000, #fc5322);
+}
+
+.searchBar .left {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 3%;
+  margin-top: 20rpx;
+  display: inline-block;
+}
+
+.searchBar .left image {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+.searchBar .right {
+  /* background-color: yellow; */
+  color: white;
+  text-align: center;
+  font-size: 30rpx;
+  width: 90rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 3%;
+  margin-top: 15rpx;
+  display: inline-block;
+  position: absolute;
+  right: 1%;
+}
+
+.searchBar .right image {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+.searchBar .search {
+  width: 85%;
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50rpx;
+  margin-top: 10rpx;
+  left: 3%;
+}
+
+.searchBar .search_arr {
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+
+.searchBar .search_arr input {
+  margin-left: 50rpx;
+  height: 60rpx;
+  border-radius: 5px;
+  font-size: 32rpx;
+}
+
+.searchBar .searchcion {
+  margin: 12rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  left: 6rpx;
+  z-index: 2;
+  width: 20rpx;
+  height: 20rpx;
+  text-align: center;
+}
